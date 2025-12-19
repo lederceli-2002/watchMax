@@ -1,0 +1,46 @@
+/*+++++++++Barra de Menu+++++++++++*/
+.MenuPrincipal{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: black;
+}
+.logo{
+    width: 24%;
+    margin: 0px;
+    padding: 0px;
+}
+.opciones ul{
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.opciones ul li a{
+    display: block;             
+    padding: 5px 20px;         
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 6px;          
+    transition:0.3s, color 0.3s;  
+    
+}
+.opciones ul li a:hover{
+    background-color: red;       
+    color: white;
+}
+.logo-contenedor{
+    display: flex;
+    align-items: center;
+}
+
+/*++++++++++++++++++++++++carrusel+++++++++++++++++++++++++++++*/
+.banner1{
+        width: 100%;   /* ancho total de la ventana */
+    height: 100%;  /* alto total de la ventana */
+    object-fit: cover; /* 🔥 clave: no se deforma */
+}
