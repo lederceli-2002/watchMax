@@ -17,3 +17,24 @@ function carrusel()
  }  
 }
 setInterval(carrusel,2000);
+
+
+//Funcion de rotacion de las redes 
+function girar(e){
+e.style.transform="rotateY(360deg)";
+e.style.transition="all 3s";
+}
+function volver(e){
+e.style.transform="rotateY(0deg)";
+e.style.transition="all 3s";
+}
+for(var i=0;i<document.getElementsByClassName("redes").length;i++){
+    document.getElementsByClassName("redes")[i].setAttribute("onmouseover","girar(this)");
+    document.getElementsByClassName("redes")[i].setAttribute("onmouseout","volver(this)");
+}
+
+
+
+
+
+
