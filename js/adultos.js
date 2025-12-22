@@ -1,9 +1,9 @@
 //carrusel
 let imgs=[
-  "imagenes-index/banner.jpg",
-  "imagenes-index/banner1.jpg",
-  "imagenes-index/banner2.jpg",
-  "imagenes-index/banner3.jpg"
+  "../imagenes-index/banner.jpg",
+  "../imagenes-index/banner1.jpg",
+  "../imagenes-index/banner2.jpg",
+  "../imagenes-index/banner3.jpg"
 ]
 
 let c=0;

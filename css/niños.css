@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color:white;
+    background-color:black;
 }
 
 /*+++++++++++++++++Menu principal++++++++++++++++++++++++++*/
@@ -25,7 +25,13 @@ body {
 .logo:hover{
     transform: scale(1.1);
 }
+.opciones{
+    background-color: #E38978;
+    padding: 7px 14px;
+    border-radius: 6px;
+}
 .opciones ul {
+    
     display: flex;
     gap: 45px;
     list-style: none;
@@ -57,6 +63,7 @@ body {
 .banner-img {
     width: 100%;
     height: 100%;
+    border-radius: 25px;
 }
 /*+++++++++++++++++Carrusel++++++++++++++++++++++++++*/
 
@@ -97,6 +104,32 @@ body {
     transform: scale(1.1);
 }
 /*+++++++++++++++++++Listado++++++++++++++++++++++++++*/
+
+/*+++++++++++++++++++borrado de imagenes++++++++++++++++++++++++++*/
+
+.contenedor-card {
+    position: relative;
+    display: inline-block;
+    margin: 35px;
+}
+
+.img1 {
+    position: relative;
+    z-index: 2; 
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.texto-atras {
+    color: white;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Texto abajo */
+    text-align: center;
+    width: 80%;
+}
+/*+++++++++++++++++++borrado de imagenes++++++++++++++++++++++++++*/
 
 /*+++++++++++++++++Pie de pagina++++++++++++++++++++++++++*/
 .pie-de-pagina {
