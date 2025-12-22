@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  padding: 10px 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+/*+++++++++++++++++Menu principal++++++++++++++++++++++++++*/
+.MenuPrincipal {
+  position: sticky; /*para que se quede la bbarra pegada arriba*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  background-color: black;
+}
+.logo {
+  width: 240px;
+  height: 60px;
+}
+.opciones ul {
+  display: flex;
+  gap: 20px;
+}
+
+.opciones ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 8px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.opciones ul li a:hover {
+  background-color: rgb(32, 80, 203);
+  color: white;
+}

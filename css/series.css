@@ -1,0 +1,27 @@
+/*+++++++++++++++++++Listado++++++++++++++++++++++++++*/
+.listado {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+.img-contenedor {
+  width: 100%;
+  max-width: 458px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.listado img {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.listado .img-contenedor img:hover {
+  transform: scale(1.1);
+  opacity: 0.7;
+}
+/*+++++++++++++++++++Listado++++++++++++++++++++++++++*/

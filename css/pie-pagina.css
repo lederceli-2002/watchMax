@@ -1,0 +1,41 @@
+.pie-de-pagina {
+  text-align: center;
+  font-size: 14px;
+  color: white;
+  padding: 20px 0;
+  font-weight: bold;
+}
+
+.contenedor-iconos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+.social-icono {
+  font-size: 30px;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  text-decoration: none;
+  transition: transform 0.3s;
+}
+
+.social-icono.fa-facebook-f {
+  color: #3b5998;
+}
+.social-icono.fa-youtube {
+  color: #ff0000;
+}
+.social-icono.fa-twitter {
+  color: #1da1f2;
+}
+.social-icono.fa-instagram {
+  color: #e4405f;
+}
+
+.social-icono:hover {
+  transform: scale(1.2);
+  color: white;
+}
