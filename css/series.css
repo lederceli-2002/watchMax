@@ -2,16 +2,32 @@
 .listado {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-columns: auto auto auto auto;
+  margin: 0 auto;
   gap: 20px;
-  justify-items: center;
 }
 .img-contenedor {
-  width: 100%;
-  max-width: 458px;
+  position: relative;
   overflow: hidden;
   border-radius: 10px;
 }
+.icono-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  color: rgb(32, 80, 203);
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 2;
+  pointer-events: none;
+}
+.img-contenedor:hover .icono-play {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
 .listado img {
   width: 100%;
   height: 250px;
@@ -22,6 +38,22 @@
 
 .listado .img-contenedor img:hover {
   transform: scale(1.1);
-  opacity: 0.7;
+  opacity: 0.6;
+}
+
+.titulo-serie {
+  color: white;
+  margin-top: 15px;
+  font-weight: 700;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+.img-contenedor:hover .titulo-serie {
+  color: rgb(52, 104, 236);
+}
+
+.listado a {
+  text-decoration: none;
 }
 /*+++++++++++++++++++Listado++++++++++++++++++++++++++*/

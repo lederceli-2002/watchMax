@@ -16,7 +16,7 @@
   margin: 40px 20px 15px;
   text-align: center;
   padding: 6px 18px;
-  background-color: red;
+  background-color: rgb(32, 80, 203);
   border-radius: 6px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   transition: color 0.3s;
@@ -29,17 +29,16 @@
 
 /*+++++++++++++++++++Listado++++++++++++++++++++++++++*/
 .listado {
+  width: 100%;
   display: flex;
   gap: 20px;
   padding: 10px 20px 30px;
   overflow-x: auto;
 }
-
 .listado img {
   height: 230px;
   border-radius: 10px;
   transition: transform 0.3s ease;
-  cursor: pointer;
 }
 
 .listado img:hover {
