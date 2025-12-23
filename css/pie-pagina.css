@@ -5,7 +5,10 @@
   padding: 20px 0;
   font-weight: bold;
 }
-
+.redes{
+  cursor: pointer;
+   height: 40px;width: 40px;border: 2px solid white;margin: 40px;
+}
 .contenedor-iconos {
   display: flex;
   justify-content: center;
